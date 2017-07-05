@@ -1,37 +1,137 @@
-## Welcome to GitHub Pages
+@charset "utf-8";
+/* CSS Document */
 
-You can use the [editor on GitHub](https://github.com/Jenshin/css/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+html {
+	width:100%;	
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+body {
+	text-align:center;
+	margin:0;
+	padding:0;
+	width:100%;
+	background-color:#f3f3f3;
+}
 
-### Markdown
+.content {
+	margin:0 auto;
+	max-width:800px;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+h1 {
+	margin:30px 0 0 0;
+	padding:0;
+}
 
-```markdown
-Syntax highlighted code block
+h1 img {
+	margin:0;
+	padding:0;
+	width:100%;
+	max-width:260px;
+}
 
-# Header 1
-## Header 2
-### Header 3
+.table {
+	margin:30px 0 0 0;
+	width:100%;
+ 	border-collapse:collapse;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:13px;
+	color:#000;
+	text-align:left;
+	word-break:break-all;
+}
 
-- Bulleted
-- List
+.table th {
+	font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:18px;
+	font-weight:bolder;
+	text-align:center;
+	color:#FFF;
+	letter-spacing:0.07em;
+	border:solid 1px #d8d8d8;
+	background-color:#c8c8c8;
+	background:-moz-linear-gradient(270deg, #c8c8c8 0%, #bdbdbd 100%);
+	background:-webkit-linear-gradient(270deg, #c8c8c8 0%, #bdbdbd 100%);
+	background:-o-linear-gradient(270deg, #c8c8c8 0%, #bdbdbd 100%);
+	padding:12px 0 12px 15px;
+}
 
-1. Numbered
-2. List
+.table td {
+	border:solid 1px #d8d8d8;
+	padding:14px 15px;
+}
 
-**Bold** and _Italic_ and `Code` text
+.table tr:nth-child(even) {
+	background:#fcfcfc;
+}
 
-[Link](url) and ![Image](src)
-```
+.table tr:nth-child(odd) {
+	background:#FFF;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+.table td:first-child {
+	background: #f1f1f1;
+	min-width:130px;
+}
 
-### Jekyll Themes
+.copy {
+	float:right;
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Jenshin/css/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+.caution {
+	margin:30px 0;
+	padding:0 40px;
+	background-color:#fff;
+	border:1px solid #ddd;
+}
 
-### Support or Contact
+.caution h3 {
+	margin:30px 0 15px 0;
+	padding:0;
+	font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:20px;
+	font-weight:bolder;
+	line-height:120%;
+	text-align:center;
+}
+.caution p {
+	margin:0 0 20px 0;
+	padding:0;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+	line-height:150%;
+	text-align:left;
+}
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+.caution img {
+	margin:0 0 30px 0;
+	width:50%;
+	max-width:800px;
+	border:1px solid #ddd;
+}
+
+@media screen and (max-width:750px) {
+	.caution {
+		margin:30px 0;
+		padding:0 30px;
+		background-color:#fff;
+		border:1px solid #ddd;
+	}
+
+	.caution h3 {
+		font-size:21px;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.copy {
+		margin:8px 0 5px 0;
+		float:none;
+		display:block;
+	}
+	
+	.copy_br {
+		display:block;
+	}
+
+}
